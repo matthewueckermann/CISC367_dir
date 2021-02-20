@@ -1,1 +1,1 @@
-# CISC367_dir
+My course directory for CISC367
