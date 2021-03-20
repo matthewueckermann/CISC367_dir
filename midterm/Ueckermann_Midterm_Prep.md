@@ -36,12 +36,18 @@ As stated I am going to use the TRI which has data from 1987-2019 accessible in 
 
 Documentation about the dataset is given in this [pdf](https://www.epa.gov/sites/production/files/2019-08/documents/basic_data_files_documentation_aug_2019_v2.pdf).
 
-## Ethical concerns
+## Ethical concerns and other considerations
 
-Some ethical concerns and considerations I have about my analysis include:
-- Mentioning a "red state" - "blue state" effect implicitly assumes that the "red states" will allow for more emissions than blue states
+Some ethical concerns and  I have about my analysis include:
+- As a chemical engineering major entering industry (although in a more sustainable chem company) I will have my own biases about the industry and will probably not be as critical as someone who is not.
+- Chemical companies could use this analysis as evidence that they do better than their peers or other in a geographic area, which may disincentivize improvement.
+- I am not an expert of the toxicity of different chemicals, I know generally PBTs/dioxins are worse than others on the list but there is not necessarly a consensus on all chemicals on the list. Treating them the same would be disingenuous, but may be necessary for this level.
+- Mentioning a "red state" - "blue state" effect implicitly assumes that the "red states" will allow for more emissions than blue states.
+
+
+
+Other considerations/compounding factors:
 - The geographical distribution of chemical plants is skewed, i.e. there are a lot of petroleum refineries in Texas, but none in Massachusetts.
 - You reach a level in emissions control technology where it can be hard (and costly) to improve, expecting plants to improve year to year is not realistic.
 - Controlling by facility size is required in looking at fugitive air emissions as they are a function of the amount of pressurized equipment.
 - Changing the composition of chemicals released may be more indicative of a change in product, not of a change in the process.
-
