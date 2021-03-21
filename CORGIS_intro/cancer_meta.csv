@@ -1,0 +1,27 @@
+﻿Name,cancer,,,
+Version,2.0.0?,,,
+Author,Matthew Ueckermann,,,
+Created,3/21/2021,,,
+Data File,cancer_data.csv,,,
+Overview,Number of cancer diagnosises and mortalities for each state,,,
+Data source,https://www.cdc.gov/cancer/uscs/dataviz/download_data.htm,,,
+Description,"The number and rate (age adjusted and not) of cancer diagnosises and mortalities are reported by state for 2002, 2007, 2012, and 2017. Listed by combination of cancer site, race, and sex.",,,
+Tags,"cancer, cancer deaths, medical, health",,,
+Acknowledgement,United States Cancer Statistics,,,
+Row,Cancer Reports,,,
+Row Explanation,reprt on cancer for specific state/time period/demographich ,,,
+Icon,cancer-icon.jpg,,,
+Splash,cancer-icon.jpg,,,
+Properties,Name,Type,Index,Description
+,State,string,,The name of the U.S. State
+,Year,int,,Year of data in row
+,Population,int,,Population of state in that year
+,Cancer.Site,string,,Location or type of cancer
+,Race,string,,Race of patients in row
+,Sex,string,,Sex of patients in row
+,Incidence.Count,,,Number of cancer cases diagnosised in patients of demographic in row
+,Mortality.Count,,,Number of cancer deaths of patients of demographic in row 
+,Incidence.Simple_Rate,,,"Rate of cancer cases diagnosised (per 100,000 population) of demographic in row"
+,Mortality.Simple_Rate,,,"Rate of cancer deaths (per 100,000 population) of demographic in row"
+,Incidence.Age_Adjusted_Rate,,,"Age adjusted Rate of cancer cases diagnosised (per 100,000 population) of demographic in row"
+,Mortality.Age_Adjusted_Rate,,,"Age adjusted rate of cancer deaths (per 100,000 population) of demographic in row"
