@@ -7,6 +7,7 @@ I am planning on exploring the [Toxics Release Inventory (TRI)](https://en.wikip
 
 In chemical manufacturing it is impossible not to release some amount of toxic chemicals (pressure equipment, incinerators, and wastewater treatment can never be perfect) while accidents will also cause unintended releases. The report is useful as it breaks down the location of the releases (onsite water discharge, offsite water treatment, landfill, release to air, and much more). It also allows one to search chemical released based on general toxicity as it notes persistent and bioaccumulate compounds (PBTs) as well as dioxins, both of which are particularly nasty. 
 
+Helpful resource https://www.epa.gov/toxics-release-inventory-tri-program/timeline-toxics-release-inventory-milestones
 
 ## Problem to explore
 
