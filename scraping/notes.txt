@@ -1,0 +1,8 @@
+Scraped information from members of the Maryland House of Delegates by using:
+https://msa.maryland.gov/msa/mdmanual/06hse/html/hseal.html
+
+Went to each of their individual pages and pulled their name, party, district, county, a phone number, and their email
+
+github repo:
+
+
