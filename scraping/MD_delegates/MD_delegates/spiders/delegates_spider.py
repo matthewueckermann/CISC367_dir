@@ -16,7 +16,7 @@ class DelegatesSpider(scrapy.Spider):
     
     def parseDelegates(self, response):
         yield {
-            'Name' : response.css('b').re(r'\w+\s+\w+\.?\s?\w+')[0], 
+            'Name' : response.css('b').re(r'\w+ \w*\.? ?\(?\w*\)? ?\w+ ?\w* ?\,? ?\w*\.?')[0],  #\w+\s?\w*\.?\s?\(?\w+?\)?\s\w+\s?\w*
             'Party' : response.css('i').re(r'Democrat|Republican')[0],
             'District': response.css('i').re(r'District \w+')[0],
             'County' : response.css('a::text').getall()[1],

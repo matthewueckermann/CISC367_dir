@@ -1,8 +1,10 @@
-Scraped information from members of the Maryland House of Delegates by using:
+Scraped information from members of the Maryland House of Delegates by the following link:
 https://msa.maryland.gov/msa/mdmanual/06hse/html/hseal.html
 
-Went to each of their individual pages and pulled their name, party, district, county, a phone number, and their email
+Went to each of their individual pages and pulled their name, party, district, county, a phone number, and their email addresses.
+A dataset to quickly sort by party, but also provide contact information to voters.
 
-github repo:
+github repo: https://github.com/matthewueckermann/CISC367_dir/tree/main/scraping
 
+(did it all in one commit which isnt the best I guess so sorry about that)
 
