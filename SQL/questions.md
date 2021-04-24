@@ -96,43 +96,62 @@ As expected, gives 0.25
 12. [ORDER] Produce a list of all the names of the houseware items and their sell price, ordered by their sell price.
 
 ```sql
-
+select name, sell_price
+from houseware
+Order by sell_price 
 ```
 
 13. [ORDER, LIMIT] Now produce the list of names+buy_price, ordered by buy_price descending, limited to the top 10.
 
 ```sql
-
+select name, buy_price
+from houseware
+Order by buy_price DESC
+limit 10 
 ```
 
 14. [ORDER, ALIAS] The hha_base is a number indicating how "nice" the item is. I want to find items that are have a higher hha_base per square unit of space. Produce a list of the names of items, sorted by their hha_base divided by the area they take up.
 
 ```sql
-
+select name, hha_base/(width*height) as nice_by_area
+from houseware
+order by nice_by_area desc
 ```
 
 15. [GROUP BY] How many houseware items are in each tag? Make sure you order them by frequency!
 
 ```sql
-
+select tag, count(name) as num_inTag
+from houseware
+group by tag
+order by num_inTag desc
 ```
+
+Hopefully thats the order you want...
 
 16. [GROUP BY, ALIAS] There's actually only a few different possible areas for the given objects. How many are there of each possible area?
 
 ```sql
-
+select height*width as area, count(height*width) as frequency
+from houseware
+group by area
 ```
 
 17. [GROUP BY, AGGREGATION] How much would it cost to buy all the items, within each tag? For example, the Audio tag's items would cumulatively cost 103600
 
 ```sql
-
+select tag, sum(buy_price) as sumPrice
+from houseware
+group by tag
 ```
 
 18. [GROUP BY, WHERE, AGGREGATION] How much area would all the interactable houseware items take, within each tag?
 
 ```sql
-
+select tag, sum(height*width) as sumArea 
+from houseware
+where interact = 1
+group by tag
 ```
 
 19. [JOIN, GROUP BY] For each item, how many distinct materials does it require?
@@ -149,8 +168,14 @@ As expected, gives 0.25
 
 21. [JOIN, WHERE] List all the recipes that require at least 10 star fragments
 
-```sql
+I think?
 
+```sql
+select material, sum(amount) as sumAmount 
+from recipe
+group by amount
+order by SumAmount desc
+limit 10
 ```
 
 22. [JOIN, WHERE, GROUP BY, ORDER] What tag has the most recipes that require 'stone'?
