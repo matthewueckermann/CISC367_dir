@@ -163,20 +163,16 @@ group by tag
 20 [GROUP BY, ORDER, LIMIT] What are the top 10 materials used in recipes (calculated by totaling the amounts per material).
 
 ```sql
-
+select material, sum(amount) as sumAmount 
+from recipe
+group by material
+order by SumAmount desc
+limit 10
 ```
 
 21. [JOIN, WHERE] List all the recipes that require at least 10 star fragments
 
-I think?
 
-```sql
-select material, sum(amount) as sumAmount 
-from recipe
-group by amount
-order by SumAmount desc
-limit 10
-```
 
 22. [JOIN, WHERE, GROUP BY, ORDER] What tag has the most recipes that require 'stone'?
 
